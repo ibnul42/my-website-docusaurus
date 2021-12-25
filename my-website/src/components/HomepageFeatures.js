@@ -12,6 +12,11 @@ const FeatureList = [
         used to get your website up and running quickly.
       </>
     ),
+    tag: (
+      <>
+        Create
+      </>
+    )
   },
   {
     title: 'Focus on What Matters',
@@ -22,6 +27,11 @@ const FeatureList = [
         ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
+    tag: (
+      <>
+        Build
+      </>
+    )
   },
   {
     title: 'Powered by React',
@@ -32,10 +42,15 @@ const FeatureList = [
         be extended while reusing the same header and footer.
       </>
     ),
+    tag: (
+      <>
+        Enjoy
+      </>
+    )
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, description, tag}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -44,6 +59,7 @@ function Feature({Svg, title, description}) {
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
+        <h4>{tag}</h4>
       </div>
     </div>
   );
