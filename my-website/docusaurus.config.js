@@ -39,11 +39,23 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'docs-api',
+        path: 'docs-api',
+        routeBasePath: 'docs-api',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'my-website',
+        title: 'My Site',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.png',
@@ -53,11 +65,16 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Docs', 
+            label: 'Tutorial',
           },
-          {to: 'blog', label: 'Blog', position: 'left'},          
-          {to: '/api', label: 'API', position: 'left'},
-          {to: '/docs/tutorial1', label: 'Tutorial1', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/api', label: 'API', position: 'left' },
+          {
+            to: '/docs-api/intro',    // ./docs-api/Intro.md
+            label: 'Tutorial 01',
+            position: 'left',
+            activeBaseRegex: `/docs-api/`,
+          },
           {
             href: 'https://github.com/ibnul42/my-website-docusaurus',
             label: 'GitHub',
