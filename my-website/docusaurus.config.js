@@ -43,10 +43,19 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'docs-api',
-        path: 'docs-api',
-        routeBasePath: 'docs-api',
-        sidebarPath: require.resolve('./sidebars.js'),
+        id: 'docs-api-one',
+        path: 'docs-api/tutorial01',
+        routeBasePath: 'docs-api/tutorial01',
+        sidebarPath: require.resolve('./sidebar_01.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'docs-api-two',
+        path: 'docs-api/tutorial02',
+        routeBasePath: 'docs-api/tutorial02',
+        sidebarPath: require.resolve('./sidebar_02.js'),
       },
     ],
   ],
@@ -70,10 +79,16 @@ const config = {
           { to: '/blog', label: 'Blog', position: 'left' },
           { to: '/api', label: 'API', position: 'left' },
           {
-            to: '/docs-api/intro',    // ./docs-api/Intro.md
+            to: '/docs-api/tutorial01/intro',    // ./docs-api/Intro.md
             label: 'Tutorial 01',
             position: 'left',
-            activeBaseRegex: `/docs-api/`,
+            // activeBaseRegex: `/docs-api/`,
+          },
+          {
+            to: '/docs-api/tutorial02/intro',    // ./docs-api/Intro.md
+            label: 'Tutorial 02',
+            position: 'left',
+            // activeBaseRegex: `/docs-api/`,
           },
           {
             href: 'https://github.com/ibnul42/my-website-docusaurus',
