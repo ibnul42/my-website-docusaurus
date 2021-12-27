@@ -76,8 +76,8 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
-          { to: '/api', label: 'API', position: 'left' },
+
+          // left side
           {
             to: '/docs-api/tutorial01/intro',    // ./docs-api/Intro.md
             label: 'Tutorial 01',
@@ -90,6 +90,10 @@ const config = {
             position: 'left',
             // activeBaseRegex: `/docs-api/`,
           },
+
+          // right side
+          { to: '/api', label: 'API', position: 'right' },
+          { to: '/blog', label: 'Blog', position: 'right' },
           {
             href: 'https://github.com/ibnul42/my-website-docusaurus',
             label: 'GitHub',
