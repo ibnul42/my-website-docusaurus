@@ -25,6 +25,11 @@ function HomepageHeader() {
   );
 }
 
+// Hi, I'm Ibnul Ashir
+// What's app -> +8801765427688
+// skype -> live:ibnulashir42
+// gmail -> ibnulashir42@gmail.com
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (

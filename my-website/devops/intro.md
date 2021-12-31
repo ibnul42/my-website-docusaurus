@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Intro
 
-### From Tutorial 02
+### From DevOps
 
 ## Getting Started
 

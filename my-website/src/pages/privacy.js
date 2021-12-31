@@ -4,8 +4,9 @@ import Layout from '@theme/Layout';
 export default function MyReactPage() {
   return (
     <Layout>
-      <h1>This is API page</h1>
-      <p>This is a React page</p>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <h1>This is Privacy page</h1>
+      </div>
     </Layout>
   );
 }

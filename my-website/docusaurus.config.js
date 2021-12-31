@@ -43,19 +43,28 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'docs-api-one',
-        path: 'docs-api/tutorial01',
-        routeBasePath: 'docs-api/tutorial01',
-        sidebarPath: require.resolve('./sidebar_01.js'),
+        id: 'programming',
+        path: 'programming',
+        routeBasePath: 'programming',
+        sidebarPath: require.resolve('./programming.js'),
       },
     ],
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'docs-api-two',
-        path: 'docs-api/tutorial02',
-        routeBasePath: 'docs-api/tutorial02',
-        sidebarPath: require.resolve('./sidebar_02.js'),
+        id: 'cloud',
+        path: 'cloud',
+        routeBasePath: 'cloud',
+        sidebarPath: require.resolve('./cloud.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'devops',
+        path: 'devops',
+        routeBasePath: 'devops',
+        sidebarPath: require.resolve('./devops.js'),
       },
     ],
   ],
@@ -78,21 +87,28 @@ const config = {
           },
 
           // left side
+          
           {
-            to: '/docs-api/tutorial01/intro',    // ./docs-api/Intro.md
-            label: 'Tutorial 01',
+            to: '/programming/intro',    // ./docs-api/Intro.md
+            label: 'Programming',
             position: 'left',
-            // activeBaseRegex: `/docs-api/`,
+            // activeBaseRegex: `/programming/`,
           },
           {
-            to: '/docs-api/tutorial02/intro',    // ./docs-api/Intro.md
-            label: 'Tutorial 02',
+            to: '/cloud/intro',    // ./docs-api/Intro.md
+            label: 'Cloud',
             position: 'left',
-            // activeBaseRegex: `/docs-api/`,
+            // activeBaseRegex: `/programming/`,
+          },
+          {
+            to: '/devops/intro',    // ./docs-api/Intro.md
+            label: 'DevOps',
+            position: 'left',
+            // activeBaseRegex: `/programming/`,
           },
 
           // right side
-          { to: '/api', label: 'API', position: 'right' },
+          { to: '/getting-started', label: 'Getting Started', position: 'right' },
           { to: '/blog', label: 'Blog', position: 'right' },
           {
             href: 'https://github.com/ibnul42/my-website-docusaurus',
@@ -105,28 +121,44 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Learn',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Docs',
                 to: '/docs/intro',
+              },
+              {
+                label: 'Programming',
+                to: '/programming/intro',
+              },
+              {
+                label: 'Cloud',
+                to: '/cloud/intro',
+              },
+              {
+                label: 'DevOps',
+                to: '/devops/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Find Us',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Blog',
+                to: '/blog'
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/',
+              },
+              {
+                label: 'Github',
+                href: 'https://github.com/',
+              },
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/',
               },
             ],
           },
@@ -134,17 +166,21 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Privacy',
+                to: '/privacy',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Terms of Services',
+                to: '/terms-of-services',
+              },
+              {
+                label: 'Contributor',
+                to: '/contributor',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} my-website.`,
+        copyright: `Copyright © 2021 my-website`,
       },
       prism: {
         theme: lightCodeTheme,
