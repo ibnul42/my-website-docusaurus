@@ -48,6 +48,48 @@ const FeatureList = [
       </>
     )
   },
+  {
+    title: 'Less to Learn',
+    Svg: require('../../static/img/undraw_accept_tasks_re_09mv.svg').default,
+    description: (
+      <>
+        You don't need to learn and configure many build tools. Instant reloads help you focus on development. When it's time to deploy, your bundles are optimized automatically.
+      </>
+    ),
+    tag: (
+      <>
+        Enjoy
+      </>
+    )
+  },
+  {
+    title: 'Only One Dependency',
+    Svg: require('../../static/img/undraw_programming_re_kg9v.svg').default,
+    description: (
+      <>
+        Your app only needs one build dependency. We test Create React App to make sure that all of its underlying pieces work together seamlessly – no complicated version mismatches.
+      </>
+    ),
+    tag: (
+      <>
+        Enjoy
+      </>
+    )
+  },
+  {
+    title: 'No Lock-In',
+    Svg: require('../../static/img/undraw_firmware_re_fgdy.svg').default,
+    description: (
+      <>
+        Under the hood, we use webpack, Babel, ESLint, and other amazing projects to power your app. If you ever want an advanced configuration, you can ”eject” from Create React App and edit their config files directly.
+      </>
+    ),
+    tag: (
+      <>
+        Enjoy
+      </>
+    )
+  },
 ];
 
 function Feature({Svg, title, description, tag}) {
@@ -59,7 +101,7 @@ function Feature({Svg, title, description, tag}) {
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
-        <h4>{tag}</h4>
+        {/* <h4>{tag}</h4> */}
       </div>
     </div>
   );

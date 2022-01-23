@@ -196,8 +196,8 @@ const config = {
         copyright: `Copyright © 2021 my-website`,
       },
       prism: {
-        theme: require('prism-react-renderer/themes/vsDark'),
-        darkTheme: require('prism-react-renderer/themes/vsLight'),
+        theme: require('prism-react-renderer/themes/palenight'),
+        darkTheme: require('prism-react-renderer/themes/palenight'),
       },
     }),
 };
