@@ -32,7 +32,7 @@ jobs:
     - name: Netlify Actions
       uses: nwtgck/actions-netlify@v1.2.3
       with:
-          publish-dir: './build'
+          publish-dir: './my-website/build'
           production-branch: main
           deploy-message: '${{ github.event.head_commit.message }}'
       env:
